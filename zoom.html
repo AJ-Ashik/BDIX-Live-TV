@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BDIX Online TV</title>
+    <link rel="stylesheet" href="colour.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!-- Video.js CSS -->
+    <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar  -->
+    <header>
+        <a href="#home" class="logo">
+            <i class='bx bxs-movie'></i>BDIX Online TV
+        </a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <!-- menu  -->
+        <ul class="navbar">
+            <li><a href="home" class="home-active">Home</a></li>
+            <li><a href="livetv">TV Shows</a></li>
+            <li><a href="about">About Us</a></li>
+            <li><a href="contact">Contact Us</a></li>
+            <li><a href="privacy">Privacy Policy</a></li>
+        </ul>
+
+    </header>
+
+    <!-- Video Player  -->
+    <section class="video-player">
+        <video id="video" class="video-js vjs-default-skin" controls>
+            <source src="http://103.81.104.118/hls/stream8.m3u8" type="application/x-mpegURL">
+        </video>
+    </section>
+
+    <!-- Footer  -->
+    <section class="footer">
+        <a href="" class="logo">
+            <i class='bx bxs-movie'></i>BDIX Online TV
+        </a>
+        <p>&copy; 2023 BDIX Online TV. All rights reserved.</p>
+    </section>
+
+    <!-- Video.js JavaScript -->
+    <script src="https://vjs.zencdn.net/7.20.3/video.js"></script>
+    <script>
+        var player = videojs('video');
+    </script>
+    <script src="vv.js"></script>
+</body>
+</html>
